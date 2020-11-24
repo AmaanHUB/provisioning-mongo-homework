@@ -41,4 +41,35 @@ Research how this is done. But consider how you can automate the editing of this
 * repo exists on github
 
 
+# Documentation
 
+## Requirements
+
+* Vagrant
+* Ruby
+* Git
+* Virtual box
+
+These can be installed from your relevant package manager
+
+## Introduction
+
+A small virtual machine (running Ubuntu 18.04) with a MongoDB server (version 3.2.20) on the IP 0.0.0.0 and port 27017.
+
+## Get What You Need
+
+* Clone the git directory with `git clone`
+* Check the presence of all the files
+* Run:
+```
+vagrant up
+```
+* **Tah-dah, it is running**
+* N.B. You may need to change the permissions on the `provision.sh` file to make it executable
+```
+chmod +x environment/provision.sh
+```
+
+## Check
+
+* Go into the `tests` directory and run `rake spec` to see if all the tests pass
