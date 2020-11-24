@@ -1,6 +1,8 @@
 # Provisioning Mongo Homework
 
-## Summary
+## Homework Task
+
+### Summary
 
 The developers have indicated that they'll need a mongodb database soon. We need to create a provisioning script that will create this server.
 
@@ -15,7 +17,7 @@ cd tests
 rake spec
 ```
 
-## Hints
+### Hints
 
 To get MongoDB to listen on 0.0.0.0 is a very minor change to the mongodb.conf file.
 
@@ -24,13 +26,13 @@ Research how this is done. But consider how you can automate the editing of this
 > HINT: You cannot edit a file with a provisioning script so you'll have to come up with another solution.
 
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 * Uses vagrant file
 * Create VM and Mongod is working
 * MongoDB 3.2.20 is isntalled
 
-## Extra time tomorrow -- Try to research and see if you can do it!
+### Extra time tomorrow -- Try to research and see if you can do it!
 * MongoDB to listen on 0.0.0.0 on port 27017
 * Work with command "vagrant up"
 * All tests passing
@@ -41,9 +43,9 @@ Research how this is done. But consider how you can automate the editing of this
 * repo exists on github
 
 
-# Documentation
+## Documentation
 
-## Requirements
+### Requirements
 
 * Vagrant
 * Ruby
@@ -52,11 +54,11 @@ Research how this is done. But consider how you can automate the editing of this
 
 These can be installed from your relevant package manager
 
-## Introduction
+### Introduction
 
 A small virtual machine (running Ubuntu 18.04) with a MongoDB server (version 3.2.20) on the IP 0.0.0.0 and port 27017.
 
-## Get What You Need
+### Get What You Need
 
 * Clone the git directory with `git clone`
 * Check the presence of all the files
@@ -70,6 +72,6 @@ vagrant up
 chmod +x environment/provision.sh
 ```
 
-## Check
+### Check
 
 * Go into the `tests` directory and run `rake spec` to see if all the tests pass
